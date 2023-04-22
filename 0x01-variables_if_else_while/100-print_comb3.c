@@ -1,18 +1,19 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
+ * main - functiom to print combination of two numbers
  *
- * Return: 0 on  (Success)
+ * Return : 0 on success
  */
 
 int main(void)
 {
 	int i = '0';
-	int j = '1';
+	int j = '0';
 
-	while (i < '8')
+	while (i <= '9')
 	{
-		while (j < '9')
+		while (j <= '9')
 		{
 			if (!(i > j) || i == j)
 			{
@@ -30,8 +31,8 @@ int main(void)
 			}
 			j++;
 		}
-		j = '1';
+		j = '0';
 		i++;
 	}
-return (0);
+	return (0);
 }
